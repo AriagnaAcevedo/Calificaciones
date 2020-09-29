@@ -1,0 +1,39 @@
+package Calificacion;
+public class Promedios 
+{
+    double Suma, Promedio=0;
+    
+    public void Clase()
+    {
+        Suma=0;
+        for(int i=0;i<15;i++)
+        {
+            Suma+=Alumnos.Calificacion[i];
+        }
+        Promedio=Suma/15;
+        System.out.println("");
+        System.out.println("El promedio es: "+Promedio);
+    }
+    public void Primeros()
+    {
+        Suma=0;
+        for(int i=0;i<5;i++)
+        {
+            Suma+=Alumnos.Calificacion[i];
+        }
+        Promedio=Suma/5;
+        System.out.println("");
+        System.out.println("El promedio es: "+Promedio);
+    }
+    public void Ultimos()
+    {
+        Suma=0;
+        for(int i=10;i<15;i++)
+        {
+            Suma+=Alumnos.Calificacion[i];
+        }
+        Promedio=Suma/5;
+        System.out.println("");
+        System.out.println("El promedio es: "+Promedio);
+    }
+}
